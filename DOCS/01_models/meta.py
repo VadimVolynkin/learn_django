@@ -142,8 +142,10 @@ class Pizza(models.Model):
         # Вместо этого используйте UniqueConstraint с параметром ограничений.
         # Множество полей, комбинация значений которых должна быть уникальна.
 
-        index_together
+        index_together = [["pub_date", "deadline"],]
         # Вместо этого используйте параметр индексов.
+
+        # ===== Read-only Meta attributes ===========
 
         label = 'polls.Question'
         # Представление объекта, возвращает app_label.object_name.
