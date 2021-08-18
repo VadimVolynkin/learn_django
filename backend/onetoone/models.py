@@ -33,4 +33,10 @@ p = Person.objects.create(name = 'ivan')
 p.save()
 a = Author.objects.create(person=p, salary=123)
 a.save()
+
+# получение данных
+obj = Person.objects.get(name='ivan')
+obj.name
+obj.author.salary
+
 """
