@@ -4,6 +4,7 @@ from django.db import models
 # ONE-TO-ONE
 # =====================================================
 
+"""
 # базовая модель
 class Person(models.Model):
     # неявно создается еще одно свойство с именем зависимой модели - author,
@@ -20,7 +21,6 @@ class Author(models.Model):
     salary = models.PositiveIntegerField()
 
 
-"""
 
 # ===== QUERIES with ONE TO ONE ===============
 # try it in ./manage.py shell

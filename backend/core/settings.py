@@ -37,9 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'onetoone.apps.OnetooneConfig',
 
+    'model_inheritance.apps.ModelInheritanceConfig',
+
+
+
+
+    # === DJANGO RELATIONS
+    # 'onetoone.apps.OnetooneConfig',
     # 'manytoone.apps.ManytooneConfig',
     # 'manytomany.apps.ManytomanyConfig',
     
