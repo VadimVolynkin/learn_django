@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from queries.models import Product
+from queries.views import runquery
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('manytomany/', include('manytomany.urls')),
+    path('products/', runquery),
 ]
+
+urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]

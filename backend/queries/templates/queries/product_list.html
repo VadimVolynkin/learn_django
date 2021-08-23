@@ -1,0 +1,10 @@
+
+
+{{product_list}}
+{% for p in product_list %}
+    <div>
+        <li>{{p.name}}</li>
+        <li>{{p.price}}</li>
+        <li>{{p.manufacturer}}</li>  
+    </div>
+{% endfor %}
